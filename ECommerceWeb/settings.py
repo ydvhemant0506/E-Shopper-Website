@@ -144,5 +144,5 @@ EMAIL_HOST_USER = 'iron.throne.050603@gmail.com'
 EMAIL_HOST_PASSWORD = '*******'
 
 
-STRIPE_SECRET_KEY = 'sk_test_51NGH5aSDmPLTbtbE6llO67ioKCLOL6FGRwsM6FPZXc4u6xbpI5fhFfOB16O18K6eJn6vjAbB1obW6MXrAmPeqqmF00DINlc48L'
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51NGH5aSDmPLTbtbEUsnUm1m9fTyLYkhPsWza89gOS3XfWrnycSzAdviyNv4tlMFvecSAye3vHhR5kD1KmmQeybic001uaffuoo'
+STRIPE_SECRET_KEY = 'sk_test_51NGH5aSDmPL*******************************************************************XrAmPeqqmF00DINlc48L'
+STRIPE_PUBLISHABLE_KEY = '******************************************************************************************************'
