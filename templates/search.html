@@ -1,0 +1,43 @@
+{% extends 'master2.html' %}
+{% block body %}
+
+<div class='container'>
+    <div class="features_items"><!--features_items-->
+        <h2 class="title text-center">Search Products</h2>
+        {% if product|length < 1 %}
+            <div class="content-404">
+                <h1><b>OPPS!</b> We Couldn't Find this Product</h1>
+                <p>Uh... So it looks like you Searched something But sorry either its Unavailable or Not Served</p>
+                <h2><a href="{% url 'homepage' %}">Bring me back Home</a></h2><br>
+            </div>
+        {% endif %}
+        {% for prod in product %}
+            <div class="col-sm-4">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                            <div class="productinfo text-center">
+                                <img src="/{{prod.image}}" alt="Reloading" style='height:200px; width:200px; border: 1px solid black; border-radius: 20px' />
+                                <h2>{{prod.price}}</h2>
+                                <p>{{prod.name}}</p>
+                                <a href="{% url 'cart_add' prod.id %}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                            </div>
+                            <div class="product-overlay">
+                                <div class="overlay-content">
+                                    <h2>{{prod.price}}</h2>
+                                    <p>{{prod.name}}</p>
+                                    <a href="{% url 'cart_add' prod.id %}" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="choose">
+                        <ul class="nav nav-pills nav-justified">
+                            <li><a href="product/{{prod.id}}"><i class="fa fa-plus-square"></i>View More</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

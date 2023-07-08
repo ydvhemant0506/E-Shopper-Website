@@ -1,0 +1,25 @@
+{% extends 'master.html' %}
+
+{% block body %}
+<div class="container" style="margin-bottom:20px">
+    <div class="col-sm-4 col-sm-offset-1" style="margin-left:380px">
+        <div class="login-form"><!--login form-->
+            <h1>Login Here</h1>
+            <form method="post">
+            {% csrf_token %}
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" name="username" id="username">
+
+                <label for="password1">Password</label>
+                <input type="password" placeholder="Password" id="password1" name="pass">
+                
+                <button type="submit" class="btn btn-default" style="width:355px">Login</button>
+                <span>
+                    <a href="{% url 'signup' %}" >Create an account</a>
+                    <a href="{% url 'reset_password' %}" style="float:right">Forgot Password</a>
+                </span>
+            </form>
+        </div><!--/login form-->
+    </div>
+</div>
+{% endblock %}

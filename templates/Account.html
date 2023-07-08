@@ -1,0 +1,29 @@
+{% extends 'master2.html' %}
+{% block body %}
+  <div class='container' style='display: flex; flex-direction:row; justify-Content: space-between'>
+    <div>
+      {% for i in profile %}
+          <img src="{{profile.image}}" alt="{{profile.user.username}}" width="200" height="200" style='border: 2px solid black; border-radius:100px'>
+          <h4 style='text-align:center'>{{user.username}}</h4>
+          <p style='text-align:center'>Customer</p>
+          <p class="text-muted font-size-sm">Flat No.345/456 East Mumbai</p>
+          <div style='display: flex; flex-direction:row; justify-Content: center'>
+            <button class="btn btn-primary">EditProfile</button>
+          </div>
+      {% endfor %}
+          <br>
+    </div>  
+
+    <div style='width:500px; margin-bottom:20px; border: 2px solid black; border-radius:10px; padding: 10px 10px'>
+        <p><span style='font-size:25px'>Username:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style='font-size:25px'>{{user.username}}</span></p><hr>
+        <p><span style='font-size:25px'>Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style='font-size:25px'>{{user.email}}</span></p><hr>
+        <p><span style='font-size:25px'>First Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style='font-size:25px'>{{user.first_name}}</span></p><hr>
+        <p><span style='font-size:25px'>Last Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style='font-size:25px'>{{user.last_name}}</span></p><hr>
+    </div>
+
+  </div>
+
+  
+
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'master2.html' %}
+
+{% block body %}
+<h1> Pyment Processing Through STRIPE:</h1>
+<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key = "{{key}}"
+    data-description="Payment Gateway"
+    data-amount="500"
+    data-collection="auto">
+</script>
+<br>
+{% endblock %}
