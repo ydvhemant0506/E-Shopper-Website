@@ -36,3 +36,14 @@ This is a basic demo of an online shopping website. Its frontend is very similar
     and then all his orders placed will be shown in the Your Orders tab. A user can also search specific products by their brands, category, subcategory and 
     by the name of product itself by writing in the search bar. A user can also reset his.her password by clicking on forget password during loggin in into
     website. user can also access contact page where he/she can provide the contact details and any concerns which are store in the database backend.
+
+# Some Pics of E-Shopper Web:
+
+![Screenshot (452)](https://github.com/ydvhemant0506/E-Shopper-Website/assets/113281222/cf55edaf-5376-44d6-9ae7-ef2f63af0b78)
+
+![Screenshot (456)](https://github.com/ydvhemant0506/E-Shopper-Website/assets/113281222/b4ec432d-f3e4-4070-9f83-6137b65eff1b)
+
+![Screenshot (457)](https://github.com/ydvhemant0506/E-Shopper-Website/assets/113281222/6e368ed1-4be2-4772-8443-b6e019f694bb)
+
+![Screenshot (458)](https://github.com/ydvhemant0506/E-Shopper-Website/assets/113281222/860431a1-2c88-459e-b935-06c1aad6f74a)
+
